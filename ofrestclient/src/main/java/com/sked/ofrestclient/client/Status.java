@@ -6,8 +6,12 @@ package com.sked.ofrestclient.client;
  */
 public class Status {
 
+
     private int code;
     private String message;
+
+    public Status() {
+    }
 
     public Status(int code) {
         this.code = code;
@@ -32,5 +36,10 @@ public class Status {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "code " + code + " message : " + message;
     }
 }

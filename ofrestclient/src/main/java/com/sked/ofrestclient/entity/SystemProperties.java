@@ -1,40 +1,44 @@
 package com.sked.ofrestclient.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 /**
- * The Class SystemProperties.
+ * XMPPAdmin, All rights Reserved
+ * Created by Sanjeet on 13-Aug-16.
  */
-//@XmlRootElement(name = "properties")
 public class SystemProperties {
 
-	/** The properties. */
-	List<SystemProperty> properties;
+    /**
+     * The properties.
+     */
+    @JsonProperty("property")
+    List<Property> properties;
 
-	/**
-	 * Instantiates a new system properties.
-	 */
-	public SystemProperties() {
+    /**
+     * Instantiates a new system properties.
+     */
+    public SystemProperties() {
 
-	}
+    }
 
-	/**
-	 * Gets the properties.
-	 *
-	 * @return the properties
-	 */
-	//@XmlElement(name = "property")
-	public List<SystemProperty> getProperties() {
-		return properties;
-	}
+    /**
+     * Gets the properties.
+     *
+     * @return the properties
+     */
+    public List<Property> getProperties() {
+        return properties;
+    }
 
 
-	/**
-	 * Sets the properties.
-	 *
-	 * @param properties the new properties
-	 */
-	public void setProperties(List<SystemProperty> properties) {
-		this.properties = properties;
-	}
+    /**
+     * Sets the properties.
+     *
+     * @param properties the new properties
+     */
+    public void setProperties(List<Property> properties) {
+        this.properties = properties;
+    }
 }
