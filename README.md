@@ -15,7 +15,7 @@ Pretty simple -
 ### How to make request 
 Its jsut most simplified version of volley-
 
-        /*Create a account with the host and ports*/
+        ######/*Create a account with the host and ports*/
         Account account = new Account("192.168.1.3", 9090);
         
         /*Create an authenticationToken with either using admin credentials or sharedSecretKey*/
