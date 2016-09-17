@@ -15,11 +15,11 @@ Pretty simple -
 ### How to make request 
 Its jsut most simplified version of volley-
 
-/*Create a account with the host and ports*/
+/*Create an account with the host and port*/
         
         Account account = new Account("192.168.1.3", 9090);
         
-/*Create an authenticationToken with either using admin credentials or sharedSecretKey*/
+/*Create an authenticationToken with either using admin credentials or SharedSecretKey*/
         
         AuthenticationToken authenticationToken = new AuthenticationToken("admin", "admin");
         account.setAuthenticationToken(authenticationToken);
