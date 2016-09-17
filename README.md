@@ -15,14 +15,17 @@ Pretty simple -
 ### How to make request 
 Its jsut most simplified version of volley-
 
-        ######/*Create a account with the host and ports*/
+/*Create a account with the host and ports*/
+        
         Account account = new Account("192.168.1.3", 9090);
         
-        /*Create an authenticationToken with either using admin credentials or sharedSecretKey*/
+/*Create an authenticationToken with either using admin credentials or sharedSecretKey*/
+        
         AuthenticationToken authenticationToken = new AuthenticationToken("admin", "admin");
         account.setAuthenticationToken(authenticationToken);
         
-        /*Request OfApiClient with the account and callbacks*/
+/*Request OfApiClient with the account and callbacks*/
+        
         OfApiClient.with(this).account(account).getUser("admin",
                 new Listener<User>() {
                     @Override
